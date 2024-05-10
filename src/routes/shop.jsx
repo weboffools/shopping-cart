@@ -25,8 +25,9 @@ const useShopItems = () => {
 
 export default function Shop() {
   const { shopItems, error, loading } = useShopItems();
+  const [cart, setCart] = useState([]);
   const products = shopItems.map((item) => (
-    <ProductCard key={item.id} item={item} />
+    <ProductCard key={item.id} item={item} addCart={setCart} cart={cart} />
   ));
 
   if (error) return <p>{error.statusText || error.message}</p>;
