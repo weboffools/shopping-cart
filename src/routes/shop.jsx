@@ -33,7 +33,6 @@ export default function Shop() {
   if (error) return <p>{error.statusText || error.message}</p>;
   if (loading) return <p>Loading ...</p>;
 
-  console.log(shopItems);
   return (
     <div className="shop">
       <div className={styles.productArea}>{products}</div>

@@ -1,0 +1,51 @@
+.productCard {
+  display: grid;
+  padding: 15px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  justify-items: center;
+  align-items: center;
+}
+
+.productCard h2 {
+  font-weight: 300;
+}
+
+.productCard img {
+  width: 70%;
+}
+
+.productCard form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.productCard label {
+  font-size: 1.2rem;
+}
+
+.productCard input {
+  font-family: inherit;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.number {
+  display: flex;
+  gap: 3px;
+}
+
+.number input {
+  width: 3ch;
+}
+
+.addToCart {
+  align-self: center;
+  font-size: 1rem;
+  justify-self: center;
+  background: lightblue;
+  border: none;
+  border-radius: 15px;
+  padding: 8px;
+}
