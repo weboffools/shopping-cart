@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import ProductCard from '../components/ProductCard';
+import { useOutletContext } from 'react-router-dom';
 import styles from '../styles/shop.module.css';
 
 const useShopItems = () => {
@@ -25,7 +26,7 @@ const useShopItems = () => {
 
 export default function Shop() {
   const { shopItems, error, loading } = useShopItems();
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useOutletContext();
   const products = shopItems.map((item) => (
     <ProductCard key={item.id} item={item} addCart={setCart} cart={cart} />
   ));
