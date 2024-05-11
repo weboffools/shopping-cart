@@ -24,7 +24,7 @@ export default function Root() {
     <div className='cart'>
         <h2>Your Cart</h2>
         <p>You have {num} items</p>
-        <button>View Cart</button>
+        <Link className="view-cart" to="/cart">View Cart</Link>
     </div>
         </div>
     <div className='main'>
