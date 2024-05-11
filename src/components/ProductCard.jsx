@@ -18,6 +18,7 @@ export default function ProductCard({ item, cart, addCart }) {
     let num = Number(e.currentTarget.numberOfItems.value);
     let array = [...Array(num).keys()].map(() => item)
     {addCart([...cart, array])}
+    {setNumber('0')}
   }
 
   return (
